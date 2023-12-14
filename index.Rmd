@@ -1,0 +1,31 @@
+---
+title: "Gov 50 Final Project"
+author: "Ted Sunshine"
+description: "My final project"
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+## Introduction
+For this study, I analyzed the relationship between a country's climate and its general productivity. The question I was trying to answer was: does a nation's climate have an impact on its productivity?
+
+
+
+I assessed these two factors by examining how a region’s temperature and climate cycle affect its  GNI per capita. I hypothesize that nations with warmer climates are more likely to see lower levels of GNI per capita and overall productivity. My sample is a study by the The World Bank assessing the productivity of countries by their maximum daily temperature. The study aims to narrow down which nations are most economically affected by temperature and weather differences. The coded variables will be based on temperature and it will act as the independent variable. The dependent variable will be GNI per capita, coded by its pure numeric value in the data. A result of high average daily temperatures and being correlated with low GDP per capita would indicate that my hypothesis is correct. 
+
+
+```{r}
+install.packages("ggplot2")
+library(ggplot2)
+
+
+Temperature_and_Productivity_plot <- ggplot(Temperature_and_Productivity, aes(x = `Daily Temperature Maximum`, y = `GNI per capita 2010`)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "blue") + 
+  labs(x = "Daily Temperature Maximum", y = "GNI per Capita 2010", title = "Scatter Plot with Trendline")
+
+print(Temperature_and_Productivity_plot)
+
+
+```
