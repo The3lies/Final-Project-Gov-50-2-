@@ -8,15 +8,11 @@ output:
 ---
 
 ## Introduction
-For this study, I analyzed the relationship between a country's climate and its general productivity. The question I was trying to answer was: does a nation's climate have an impact on its productivity?
-
-
-
-I assessed these two factors by examining how a region’s temperature and climate cycle affect its  GNI per capita. I hypothesize that nations with warmer climates are more likely to see lower levels of GNI per capita and overall productivity. My sample is a study by the The World Bank assessing the productivity of countries by their maximum daily temperature. The study aims to narrow down which nations are most economically affected by temperature and weather differences. The coded variables will be based on temperature and it will act as the independent variable. The dependent variable will be GNI per capita, coded by its pure numeric value in the data. A result of high average daily temperatures and being correlated with low GDP per capita would indicate that my hypothesis is correct. 
+For this study, I analyzed the relationship between a country's climate and its general productivity. The question I was trying to answer was: does a nation's climate have an impact on its productivity? The sample I used was a study by the The World Bank assessing the productivity of countries by their maximum daily temperature. The primary purpose of the study was to see how nations were likely to be affected by climate change, but for the purposes of this project I wanted to look at economic repercussions of climate prior to a major climate catastrophe. I assessed how a region’s daily temperature and climate cycle affect its GNI per capita.This study aims to narrow down which nations are most economically affected by temperature and weather differences, which can give us greater insight into p
+My hypothesis for this experiment was that nations with warmer climates are more likely to see lower levels of GNI per capita and overall productivity.  The coded variables will be based on temperature and it will act as the independent variable. The dependent variable will be GNI per capita, coded by its pure numeric value in the data. A result of high average daily temperatures and being correlated with low GDP per capita would indicate that my hypothesis is correct. 
 
 
 ```{r}
-install.packages("ggplot2")
 library(ggplot2)
 
 
